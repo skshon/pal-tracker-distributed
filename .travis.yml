@@ -48,8 +48,8 @@ jobs:
         - APPLICATION=backlog
         - ./gradlew clean :applications:${APPLICATION}-server:build
       before_deploy:
-        - git config --local user.name "Travis CI"
-        - git config --local user.email "travis@example.com"
+        - git config --local user.name "skshon"
+          - git config --local user.email "skshon@lsis.com"
         - git tag -f $RELEASE_TAG
       deploy:
         <<: *github
