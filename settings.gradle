@@ -22,3 +22,7 @@ include "databases:timesheets-database"
 
 include "integration-test"
 include "platform-services:eureka-server"
+include "platform-services:oauth-server"
+include 'src:main:java'
+findProject(':src:main:java')?.name = 'src/main/java'
+
